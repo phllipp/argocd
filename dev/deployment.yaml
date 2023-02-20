@@ -1,6 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  labels: 
+    app: myapp
   name: myapp-deployment
 spec:
   selector:
@@ -14,7 +16,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: nginx:latest
+        image: nginx
         ports:
         - containerPort: 80
         

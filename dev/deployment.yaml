@@ -6,7 +6,7 @@ metadata:
   name: myapp-deployment
 spec:
   selector:
-    matchlabels:
+    matchLabels:
       app: myapp
   replicas: 2
   template:
